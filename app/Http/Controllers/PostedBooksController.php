@@ -163,8 +163,17 @@ class PostedBooksController extends Controller
         // $postedbook -> delete();
     }
 
-    public function Mobileupdate(PostRequest $request, $id)
+    public function Mobileupdate(Request $request, $id)
     {
+        $this->validate($request,  [
+            'title' => 'required',
+            'description'  => 'required',
+            'price'   => 'required',
+            'isbn'    => 'required',
+            'author'  => 'required',
+            'year'     => 'required',
+        ]);
+
         $book = PostedBook::find($id);
         $book->title = $request->title;
         $book->price = $request->price;
