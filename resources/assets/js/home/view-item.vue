@@ -19,7 +19,7 @@
         </div>
         <div class="col-3">
           <div class="card" style="width: 30rem;">
-            <img class="card-img-top"src="images/bookshelflogo.png" alt="Card image cap">
+            <img class="card-img-top" src="images/bookshelflogo.png" alt="Card image cap">
             <div class="card-body">
               <chat-box :sellerId="data.sellerId"></chat-box>
             </div>
@@ -29,7 +29,9 @@
       </div>
 
       <div class="row">
-            <related-books :related="title" :id="data.postDetails[0].item.id" ref="relatedbooks"></related-books>
+            <div v-if="data.postDetails">
+              <related-books :related="title" :id="data.postDetails[0].item.id" ref="relatedbooks"></related-books>
+            </div>
       </div>
     </div>
     <!--body-->

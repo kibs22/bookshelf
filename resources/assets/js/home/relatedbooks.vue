@@ -6,7 +6,7 @@
         <p v-show="loading">Please wait...</p>
     </div>
     
-    <div v-if="localrelated.length != 0">
+    <div v-if="localrelated">
         <div class="col-md-3"  v-for="l of localrelated">
             <div class="panel panel-danger" style="width:200px;">
                 <div class="panel-heading" style="font-size:10px">{{ l.title }}</div>

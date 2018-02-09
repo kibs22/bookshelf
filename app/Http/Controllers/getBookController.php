@@ -7,7 +7,7 @@ use App\Category;
 use Illuminate\Http\Request;
 
 
-class getBookController extends Controller
+class GetBookController extends Controller
 {
     public function __invoke()
     {

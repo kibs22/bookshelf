@@ -88608,7 +88608,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.loading),
       expression: "loading"
     }]
-  }, [_vm._v("Please wait...")])]), _vm._v(" "), (_vm.localrelated.length != 0) ? _c('div', _vm._l((_vm.localrelated), function(l) {
+  }, [_vm._v("Please wait...")])]), _vm._v(" "), (_vm.localrelated) ? _c('div', _vm._l((_vm.localrelated), function(l) {
     return _c('div', {
       staticClass: "col-md-3"
     }, [_c('div', {
@@ -89164,6 +89164,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -89520,13 +89522,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })], 1)])])]), _vm._v(" "), _c('div', {
     staticClass: "row"
-  }, [_c('related-books', {
+  }, [(_vm.data.postDetails) ? _c('div', [_c('related-books', {
     ref: "relatedbooks",
     attrs: {
       "related": _vm.title,
       "id": _vm.data.postDetails[0].item.id
     }
-  })], 1)]), _vm._v(" "), _c('div', {
+  })], 1) : _vm._e()])]), _vm._v(" "), _c('div', {
     staticClass: "container"
   }, [_c('footers')], 1)], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

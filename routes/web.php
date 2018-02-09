@@ -63,10 +63,10 @@ Route::group(['prefix'=> 'api'], function(){
 	Route::get('/viewSpecificDetails','PostedBooksController@show');
 	Route::resource('register','UserController');
 	
-	Route::get('/getCategory', 'getCategoryController');
+	Route::get('/getCategory', 'GetCategoryController');
 	Route::post('/search','SearchBookController@get_search');
 	Route::post('/trial', 'TrialController@postBook');
-	Route::get('/getBook', 'getBookController');
+	Route::get('/getBook', 'GetBookController');
 	
 	Route::get('/getRelatedByGoogle','GetRelatedBooksController@google');
 	Route::get('/related','GetRelatedBooksController@getRelated');
@@ -131,8 +131,6 @@ Route::group(['prefix'=> 'api'], function(){
 
 			//related
 			
-			
-
 			//suggestions
 			Route::get('/getSuggestions','SuggestionsController@getSuggestion');
 
