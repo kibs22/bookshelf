@@ -16,31 +16,31 @@
 
 Route::get('/admin','Admincontroller@index');
 
-Route::get('/admin', 'AdminController@showLogin');
-Route::post('/adminLogin', 'AdminController@loginAdmin');
-Route::get('/dashboard', 'AdminController@showDashbaord');
-Route::get('/manageAdmin', 'AdminController@showManageAdmin');
-Route::post('/addAdmin', 'AdminController@insertAdmin');
-Route::get('/logout', 'AdminController@logout');
-Route::get('/adminList', 'AdminController@showAdminList');
-Route::get('/profile', 'AdminController@showProfile');
-Route::post('/update', 'AdminController@updateProfile');
-Route::get('/userList', 'AdminController@showUserList');
+Route::get('/admin', 'Admincontroller@showLogin');
+Route::post('/adminLogin', 'Admincontroller@loginAdmin');
+Route::get('/dashboard', 'Admincontroller@showDashbaord');
+Route::get('/manageAdmin', 'Admincontroller@showManageAdmin');
+Route::post('/addAdmin', 'Admincontroller@insertAdmin');
+Route::get('/logout', 'Admincontroller@logout');
+Route::get('/adminList', 'Admincontroller@showAdminList');
+Route::get('/profile', 'Admincontroller@showProfile');
+Route::post('/update', 'Admincontroller@updateProfile');
+Route::get('/userList', 'Admincontroller@showUserList');
 
-Route::get('/ajax', 'AdminController@AJAX');
-Route::get('/category', 'AdminController@showCategory');
-Route::post('/updateCat', 'AdminController@updateCategory');
-Route::post('/createCategory', 'AdminController@createCategory');
-Route::post('/deleteCategory', 'AdminController@destroyCategory');
-Route::post('/changePassword', 'AdminController@passwordChange');
+Route::get('/ajax', 'Admincontroller@AJAX');
+Route::get('/category', 'Admincontroller@showCategory');
+Route::post('/updateCat', 'Admincontroller@updateCategory');
+Route::post('/createCategory', 'Admincontroller@createCategory');
+Route::post('/deleteCategory', 'Admincontroller@destroyCategory');
+Route::post('/changePassword', 'Admincontroller@passwordChange');
 
-Route::get('/reportAdmin', 'AdminController@reportAdmin');
-Route::post('/addreportAdmin', 'AdminController@addreportAdmin');
-Route::get('/viewreportAdmin', 'AdminController@viewreportAdmin');
-Route::post('/deletereportAdmin', 'AdminController@destroyreportAdmin');
-Route::get('/userReports', 'AdminController@userReport');
-Route::post('/blockUser', 'AdminController@userBlock');
-Route::post('/unblockUser', 'AdminController@userUnblock');
+Route::get('/reportAdmin', 'Admincontroller@reportAdmin');
+Route::post('/addreportAdmin', 'Admincontroller@addreportAdmin');
+Route::get('/viewreportAdmin', 'Admincontroller@viewreportAdmin');
+Route::post('/deletereportAdmin', 'Admincontroller@destroyreportAdmin');
+Route::get('/userReports', 'Admincontroller@userReport');
+Route::post('/blockUser', 'Admincontroller@userBlock');
+Route::post('/unblockUser', 'Admincontroller@userUnblock');
 
 
 //ADMIN
