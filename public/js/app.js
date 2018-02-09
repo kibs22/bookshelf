@@ -86006,7 +86006,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		if (this.$auth.user().id) {
 			this.interval = setInterval(function () {
 				_this.notification();
-			}, 5000);
+			}, 1000);
 		}
 	},
 

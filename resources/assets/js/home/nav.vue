@@ -108,7 +108,7 @@
 				if(this.$auth.user().id){
 					 this.interval = setInterval(()=>{
 						this.notification()
-					},5000);
+					},1000);
 				}
 		   
 		},
