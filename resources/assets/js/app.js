@@ -25,7 +25,7 @@ import VueChart from 'vue-chart-js'
 // import VueChart from 'vue-chart-js'
 
 
- axios.defaults.baseURL = 'http://localhost:8000/api';
+ axios.defaults.baseURL = 'http://bookshelf.dyndns.org/api';
  //axios.defaults.baseURL = 'http://192.168.1.12:8000/api';
 //axios.defaults.baseURL = 'http://172.20.10.6:8000/api';
 // Vue.http.options.root = 'http://locahost:8000'; /** base_url */
